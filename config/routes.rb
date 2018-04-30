@@ -26,8 +26,8 @@ Rails.application.routes.draw do
     end
     resources :articles
     resources :users
-    resources :submission_categories, :path => '/submission-categories'
-    resources :contributor_submissions, :path => '/contributor-submissions'
+    resources :submission_categories, path: '/submission-categories'
+    resources :contributor_submissions, path: '/contributor-submissions'
     resources :countries
     resources :influencers
     get 'reddit' => 'articles#reddit'
